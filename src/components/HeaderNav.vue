@@ -1,19 +1,30 @@
 <template>
     <div class="header-nav">
         <div class="header-nav-left">
-            <i class="iconfont icon-homepage icon-home"></i>
+            <i class="iconfont icon-home" @click="toHome"></i>
         </div>
         <div class="header-nav-logo"></div>
         <div class="header-nav-right">
-            <span class="icon-search"></span>
-            <i class="icon-shopCar iconfont icon-icon-test"></i>
+            <i class=" iconfont icon-search" @click="toSearch"></i>
+            <i class=" iconfont icon-icon-test"  @click="toShopCar"></i>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "HeaderNav"
+        name: "HeaderNav",
+        methods:{
+             toHome(){
+                 this.$router.push('/firstview')
+             },
+            toSearch(){
+                this.$router.push('/search')
+            },
+            toShopCar(){
+                this.$router.push('/shopCar')
+            },
+        }
     }
 </script>
 
@@ -52,14 +63,13 @@
                 display inline-block
                 width 64px
                 height 64px
-                background url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-553dba3aff.png")  no-repeat center
-                background-size 40px 40px
-            .icon-shopCar
+                font-size 60px
+                color #666
+            .icon-icon-test
                 display inline-block
                 width 64px
                 height 64px
                 font-size 60px
                 color #666666
-                font-weight 1
 
 </style>

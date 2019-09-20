@@ -1,7 +1,7 @@
 <template>
     <div class="nav-bar">
         <router-link to="/firstview" class="item">
-            <i class="iconfont icon-homepage"></i>
+            <i class="iconfont icon-home"></i>
             <span>首页</span>
 
         </router-link>

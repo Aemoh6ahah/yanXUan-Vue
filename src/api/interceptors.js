@@ -10,7 +10,7 @@ import qs from 'qs'
 // 添加请求拦截器
 axios.interceptors.request.use((config) => {
     const {method, data} = config
-    // 如果是携带数据的post请求, 进行处理
+    // 如果是携带数据的post请求, 进行处理1
     if (method.toLowerCase()==='post' && data && typeof data==='object') {
         config.data = qs.stringify(data) // {name: 'tom', pwd: '123'} ==> name=tom&pwd=123
     }

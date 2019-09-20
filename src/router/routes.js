@@ -85,6 +85,10 @@ export default {
         {
             path:'/firstview',
             redirect:'/firstview/home'
+        },
+        {
+            path:'/',
+            redirect:'/firstview'
         }
     ]
 }
