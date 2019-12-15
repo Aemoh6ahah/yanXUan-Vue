@@ -44,7 +44,9 @@
                     </ul>
                 </div>
                 <div class="toggle" @click="showMask">
-                    <span class="icon" :class="{'active':isShowMask}"></span>
+                    <span class="icon" :class="{'active':isShowMask}">
+                        1
+                    </span>
                 </div>
             </div>
             <div class="mask" v-show="isShowMask" @click.self="hideMask">
