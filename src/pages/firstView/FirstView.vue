@@ -46,6 +46,7 @@
                 <div class="toggle" @click="showMask">
                     <span class="icon" :class="{'active':isShowMask}">
                         123
+                        123
                     </span>
                 </div>
             </div>
